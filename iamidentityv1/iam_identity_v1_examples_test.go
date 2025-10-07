@@ -117,12 +117,16 @@ var _ = Describe(`IamIdentityV1 Examples Tests`, func() {
 	Describe(`External configuration`, func() {
 		It("Successfully load the configuration", func() {
 			var err error
-			_, err = os.Stat(externalConfigFile)
-			if err != nil {
-				Skip("External configuration file not found, skipping tests: " + err.Error())
+
+			if os.Getenv("IBM_CREDENTIALS_FILE") == "" {
+				_, err = os.Stat(externalConfigFile)
+				if err != nil {
+					Skip("External configuration file not found, skipping tests: " + err.Error())
+				}
+
+				os.Setenv("IBM_CREDENTIALS_FILE", externalConfigFile)
 			}
 
-			os.Setenv("IBM_CREDENTIALS_FILE", externalConfigFile)
 			config, err = core.GetServiceProperties(iamidentityv1.DefaultServiceName)
 			if err != nil {
 				Skip("Error loading service properties, skipping tests: " + err.Error())
@@ -1624,7 +1628,7 @@ var _ = Describe(`IamIdentityV1 Examples Tests`, func() {
 			fmt.Println("\ncreateAccountSettingsTemplate() result:")
 			// begin-create_account_settings_template
 
-			settings := &iamidentityv1.AccountSettingsComponent{
+			settings := &iamidentityv1.TemplateAccountSettings{
 				Mfa:                                  core.StringPtr("LEVEL1"),
 				SystemAccessTokenExpirationInSeconds: core.StringPtr("3000"),
 			}
@@ -1704,7 +1708,7 @@ var _ = Describe(`IamIdentityV1 Examples Tests`, func() {
 			fmt.Println("\nupdateAccountSettingsTemplateVersion() result:")
 			// begin-update_account_settings_template_version
 
-			settings := &iamidentityv1.AccountSettingsComponent{
+			settings := &iamidentityv1.TemplateAccountSettings{
 				Mfa:                                  core.StringPtr("LEVEL1"),
 				SystemAccessTokenExpirationInSeconds: core.StringPtr("3000"),
 			}
@@ -1826,7 +1830,7 @@ var _ = Describe(`IamIdentityV1 Examples Tests`, func() {
 			fmt.Println("\ncreateAccountSettingsTemplateVersion() result:")
 			// begin-create_account_settings_template_version
 
-			settings := &iamidentityv1.AccountSettingsComponent{
+			settings := &iamidentityv1.TemplateAccountSettings{
 				Mfa:                                  core.StringPtr("LEVEL1"),
 				SystemAccessTokenExpirationInSeconds: core.StringPtr("2600"),
 				RestrictCreatePlatformApikey:         core.StringPtr("RESTRICTED"),
@@ -1946,10 +1950,10 @@ var _ = Describe(`IamIdentityV1 Examples Tests`, func() {
 			Expect(response.StatusCode).To(Equal(202))
 			Expect(err).To(BeNil())
 			Expect(excResponse).To(BeNil())
-		})
-		It(`deleteAccountSettingsTemplateVersion request example`, func() {
 
 			waitUntilAccountSettingsAssignmentFinished(iamIdentityService, &accountSettingsTemplateAssignmentId, &accountSettingsTemplateAssignmentEtag)
+		})
+		It(`deleteAccountSettingsTemplateVersion request example`, func() {
 
 			fmt.Println("\ndeleteAccountSettingsTemplateVersion() result:")
 			// begin-delete_account_settings_template_version

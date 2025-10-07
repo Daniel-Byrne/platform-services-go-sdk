@@ -9567,7 +9567,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "account_id": "AccountID", "effective": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "account": {"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "account_id": "AccountID", "entity_tag": "EntityTag", "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}]}, "assigned_templates": [{"template_id": "TemplateID", "template_version": 15, "template_name": "TemplateName", "restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}]}]}`)
+					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "account_id": "AccountID", "effective": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "account": {"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "account_id": "AccountID", "entity_tag": "EntityTag", "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}]}, "assigned_templates": [{"template_id": "TemplateID", "template_version": 15, "template_name": "TemplateName", "restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}], "restrict_user_domains_account_override": true}]}`)
 				}))
 			})
 			It(`Invoke GetEffectiveAccountSettings successfully with retries`, func() {
@@ -9625,7 +9625,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "account_id": "AccountID", "effective": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "account": {"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "account_id": "AccountID", "entity_tag": "EntityTag", "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}]}, "assigned_templates": [{"template_id": "TemplateID", "template_version": 15, "template_name": "TemplateName", "restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}]}]}`)
+					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "account_id": "AccountID", "effective": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "account": {"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "account_id": "AccountID", "entity_tag": "EntityTag", "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}]}, "assigned_templates": [{"template_id": "TemplateID", "template_version": 15, "template_name": "TemplateName", "restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE", "name": "Name", "userName": "UserName", "email": "Email", "description": "Description"}], "restrict_user_domains_account_override": true}]}`)
 				}))
 			})
 			It(`Invoke GetEffectiveAccountSettings successfully`, func() {
@@ -15285,7 +15285,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "offset": 6, "limit": 20, "first": "First", "previous": "Previous", "next": "Next", "account_settings_templates": [{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}]}`)
+					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "offset": 6, "limit": 20, "first": "First", "previous": "Previous", "next": "Next", "account_settings_templates": [{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}]}`)
 				}))
 			})
 			It(`Invoke ListAccountSettingsTemplates successfully with retries`, func() {
@@ -15350,7 +15350,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "offset": 6, "limit": 20, "first": "First", "previous": "Previous", "next": "Next", "account_settings_templates": [{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}]}`)
+					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "offset": 6, "limit": 20, "first": "First", "previous": "Previous", "next": "Next", "account_settings_templates": [{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}]}`)
 				}))
 			})
 			It(`Invoke ListAccountSettingsTemplates successfully`, func() {
@@ -15477,30 +15477,39 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateOptions model
 				createAccountSettingsTemplateOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateOptions)
 				createAccountSettingsTemplateOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Expect response parsing to fail since we are receiving a text/plain response
 				result, response, operationErr := iamIdentityService.CreateAccountSettingsTemplate(createAccountSettingsTemplateOptionsModel)
@@ -15553,7 +15562,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke CreateAccountSettingsTemplate successfully with retries`, func() {
@@ -15565,30 +15574,39 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(iamIdentityService).ToNot(BeNil())
 				iamIdentityService.EnableRetries(0, 0)
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateOptions model
 				createAccountSettingsTemplateOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateOptions)
 				createAccountSettingsTemplateOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with a Context to test a timeout error
@@ -15644,7 +15662,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke CreateAccountSettingsTemplate successfully`, func() {
@@ -15661,30 +15679,39 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(response).To(BeNil())
 				Expect(result).To(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateOptions model
 				createAccountSettingsTemplateOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateOptions)
 				createAccountSettingsTemplateOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with valid options model (positive test)
@@ -15702,30 +15729,39 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateOptions model
 				createAccountSettingsTemplateOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateOptions)
 				createAccountSettingsTemplateOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Invoke operation with empty URL (negative test)
 				err := iamIdentityService.SetServiceURL("")
@@ -15757,30 +15793,39 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateOptions model
 				createAccountSettingsTemplateOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateOptions)
 				createAccountSettingsTemplateOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation
@@ -15861,7 +15906,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke GetLatestAccountSettingsTemplateVersion successfully with retries`, func() {
@@ -15917,7 +15962,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke GetLatestAccountSettingsTemplateVersion successfully`, func() {
@@ -16161,7 +16206,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "offset": 6, "limit": 20, "first": "First", "previous": "Previous", "next": "Next", "account_settings_templates": [{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}]}`)
+					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "offset": 6, "limit": 20, "first": "First", "previous": "Previous", "next": "Next", "account_settings_templates": [{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}]}`)
 				}))
 			})
 			It(`Invoke ListVersionsOfAccountSettingsTemplate successfully with retries`, func() {
@@ -16225,7 +16270,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "offset": 6, "limit": 20, "first": "First", "previous": "Previous", "next": "Next", "account_settings_templates": [{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}]}`)
+					fmt.Fprintf(res, "%s", `{"context": {"transaction_id": "TransactionID", "operation": "Operation", "user_agent": "UserAgent", "url": "URL", "instance_id": "InstanceID", "thread_id": "ThreadID", "host": "Host", "start_time": "StartTime", "end_time": "EndTime", "elapsed_time": "ElapsedTime", "cluster_name": "ClusterName"}, "offset": 6, "limit": 20, "first": "First", "previous": "Previous", "next": "Next", "account_settings_templates": [{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}]}`)
 				}))
 			})
 			It(`Invoke ListVersionsOfAccountSettingsTemplate successfully`, func() {
@@ -16359,23 +16404,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateVersionOptions model
 				createAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateVersionOptions)
@@ -16383,7 +16437,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				createAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Expect response parsing to fail since we are receiving a text/plain response
 				result, response, operationErr := iamIdentityService.CreateAccountSettingsTemplateVersion(createAccountSettingsTemplateVersionOptionsModel)
@@ -16436,7 +16490,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke CreateAccountSettingsTemplateVersion successfully with retries`, func() {
@@ -16448,23 +16502,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(iamIdentityService).ToNot(BeNil())
 				iamIdentityService.EnableRetries(0, 0)
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateVersionOptions model
 				createAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateVersionOptions)
@@ -16472,7 +16535,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				createAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with a Context to test a timeout error
@@ -16528,7 +16591,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke CreateAccountSettingsTemplateVersion successfully`, func() {
@@ -16545,23 +16608,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(response).To(BeNil())
 				Expect(result).To(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateVersionOptions model
 				createAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateVersionOptions)
@@ -16569,7 +16641,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				createAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with valid options model (positive test)
@@ -16587,23 +16659,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateVersionOptions model
 				createAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateVersionOptions)
@@ -16611,7 +16692,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				createAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Invoke operation with empty URL (negative test)
 				err := iamIdentityService.SetServiceURL("")
@@ -16650,23 +16731,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the CreateAccountSettingsTemplateVersionOptions model
 				createAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.CreateAccountSettingsTemplateVersionOptions)
@@ -16674,7 +16764,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				createAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				createAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				createAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				createAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation
@@ -16756,7 +16846,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke GetAccountSettingsTemplateVersion successfully with retries`, func() {
@@ -16813,7 +16903,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke GetAccountSettingsTemplateVersion successfully`, func() {
@@ -16940,23 +17030,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the UpdateAccountSettingsTemplateVersionOptions model
 				updateAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.UpdateAccountSettingsTemplateVersionOptions)
@@ -16966,7 +17065,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				updateAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				updateAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Expect response parsing to fail since we are receiving a text/plain response
 				result, response, operationErr := iamIdentityService.UpdateAccountSettingsTemplateVersion(updateAccountSettingsTemplateVersionOptionsModel)
@@ -17021,7 +17120,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke UpdateAccountSettingsTemplateVersion successfully with retries`, func() {
@@ -17033,23 +17132,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(iamIdentityService).ToNot(BeNil())
 				iamIdentityService.EnableRetries(0, 0)
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the UpdateAccountSettingsTemplateVersionOptions model
 				updateAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.UpdateAccountSettingsTemplateVersionOptions)
@@ -17059,7 +17167,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				updateAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				updateAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with a Context to test a timeout error
@@ -17117,7 +17225,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200"}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
+					fmt.Fprintf(res, "%s", `{"id": "ID", "version": 7, "account_id": "AccountID", "name": "Name", "description": "Description", "committed": false, "account_settings": {"restrict_create_service_id": "NOT_SET", "restrict_create_platform_apikey": "NOT_SET", "restrict_user_list_visibility": "NOT_RESTRICTED", "restrict_user_domains": [{"realm_id": "IBMid", "invitation_email_allow_patterns": ["InvitationEmailAllowPatterns"], "restrict_invitation": true}], "allowed_ip_addresses": "AllowedIPAddresses", "mfa": "NONE", "session_expiration_in_seconds": "86400", "session_invalidation_in_seconds": "7200", "max_sessions_per_identity": "MaxSessionsPerIdentity", "system_access_token_expiration_in_seconds": "3600", "system_refresh_token_expiration_in_seconds": "259200", "user_mfa": [{"iam_id": "IamID", "mfa": "NONE"}], "restrict_user_domains_account_override": true}, "history": [{"timestamp": "Timestamp", "iam_id": "IamID", "iam_id_account": "IamIDAccount", "action": "Action", "params": ["Params"], "message": "Message"}], "entity_tag": "EntityTag", "crn": "CRN", "created_at": "CreatedAt", "created_by_id": "CreatedByID", "last_modified_at": "LastModifiedAt", "last_modified_by_id": "LastModifiedByID"}`)
 				}))
 			})
 			It(`Invoke UpdateAccountSettingsTemplateVersion successfully`, func() {
@@ -17134,23 +17242,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(response).To(BeNil())
 				Expect(result).To(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the UpdateAccountSettingsTemplateVersionOptions model
 				updateAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.UpdateAccountSettingsTemplateVersionOptions)
@@ -17160,7 +17277,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				updateAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				updateAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with valid options model (positive test)
@@ -17178,23 +17295,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the UpdateAccountSettingsTemplateVersionOptions model
 				updateAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.UpdateAccountSettingsTemplateVersionOptions)
@@ -17204,7 +17330,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				updateAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				updateAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 				// Invoke operation with empty URL (negative test)
 				err := iamIdentityService.SetServiceURL("")
@@ -17243,23 +17369,32 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(serviceErr).To(BeNil())
 				Expect(iamIdentityService).ToNot(BeNil())
 
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				userMfaModel.IamID = core.StringPtr("testString")
 				userMfaModel.Mfa = core.StringPtr("NONE")
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
 
 				// Construct an instance of the UpdateAccountSettingsTemplateVersionOptions model
 				updateAccountSettingsTemplateVersionOptionsModel := new(iamidentityv1.UpdateAccountSettingsTemplateVersionOptions)
@@ -17269,7 +17404,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				updateAccountSettingsTemplateVersionOptionsModel.AccountID = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Name = core.StringPtr("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.Description = core.StringPtr("testString")
-				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = accountSettingsComponentModel
+				updateAccountSettingsTemplateVersionOptionsModel.AccountSettings = templateAccountSettingsModel
 				updateAccountSettingsTemplateVersionOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation
@@ -18747,6 +18882,16 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(createAccountSettingsAssignmentOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
 			It(`Invoke NewCreateAccountSettingsTemplateOptions successfully`, func() {
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				Expect(accountSettingsUserDomainRestrictionModel).ToNot(BeNil())
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+				Expect(accountSettingsUserDomainRestrictionModel.RealmID).To(Equal(core.StringPtr("IBMid")))
+				Expect(accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns).To(Equal([]string{"*.*@company.com"}))
+				Expect(accountSettingsUserDomainRestrictionModel.RestrictInvitation).To(Equal(core.BoolPtr(true)))
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				Expect(userMfaModel).ToNot(BeNil())
@@ -18755,45 +18900,61 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(userMfaModel.IamID).To(Equal(core.StringPtr("testString")))
 				Expect(userMfaModel.Mfa).To(Equal(core.StringPtr("NONE")))
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				Expect(accountSettingsComponentModel).ToNot(BeNil())
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
-				Expect(accountSettingsComponentModel.RestrictCreateServiceID).To(Equal(core.StringPtr("NOT_SET")))
-				Expect(accountSettingsComponentModel.RestrictCreatePlatformApikey).To(Equal(core.StringPtr("NOT_SET")))
-				Expect(accountSettingsComponentModel.AllowedIPAddresses).To(Equal(core.StringPtr("testString")))
-				Expect(accountSettingsComponentModel.Mfa).To(Equal(core.StringPtr("NONE")))
-				Expect(accountSettingsComponentModel.UserMfa).To(Equal([]iamidentityv1.UserMfa{*userMfaModel}))
-				Expect(accountSettingsComponentModel.SessionExpirationInSeconds).To(Equal(core.StringPtr("86400")))
-				Expect(accountSettingsComponentModel.SessionInvalidationInSeconds).To(Equal(core.StringPtr("7200")))
-				Expect(accountSettingsComponentModel.MaxSessionsPerIdentity).To(Equal(core.StringPtr("testString")))
-				Expect(accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds).To(Equal(core.StringPtr("3600")))
-				Expect(accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds).To(Equal(core.StringPtr("259200")))
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				Expect(templateAccountSettingsModel).ToNot(BeNil())
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
+				Expect(templateAccountSettingsModel.RestrictCreateServiceID).To(Equal(core.StringPtr("NOT_SET")))
+				Expect(templateAccountSettingsModel.RestrictCreatePlatformApikey).To(Equal(core.StringPtr("NOT_SET")))
+				Expect(templateAccountSettingsModel.RestrictUserListVisibility).To(Equal(core.StringPtr("NOT_RESTRICTED")))
+				Expect(templateAccountSettingsModel.RestrictUserDomains).To(Equal([]iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}))
+				Expect(templateAccountSettingsModel.AllowedIPAddresses).To(Equal(core.StringPtr("testString")))
+				Expect(templateAccountSettingsModel.Mfa).To(Equal(core.StringPtr("NONE")))
+				Expect(templateAccountSettingsModel.SessionExpirationInSeconds).To(Equal(core.StringPtr("86400")))
+				Expect(templateAccountSettingsModel.SessionInvalidationInSeconds).To(Equal(core.StringPtr("7200")))
+				Expect(templateAccountSettingsModel.MaxSessionsPerIdentity).To(Equal(core.StringPtr("testString")))
+				Expect(templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds).To(Equal(core.StringPtr("3600")))
+				Expect(templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds).To(Equal(core.StringPtr("259200")))
+				Expect(templateAccountSettingsModel.UserMfa).To(Equal([]iamidentityv1.UserMfa{*userMfaModel}))
+				Expect(templateAccountSettingsModel.RestrictUserDomainsAccountOverride).To(Equal(core.BoolPtr(true)))
 
 				// Construct an instance of the CreateAccountSettingsTemplateOptions model
 				createAccountSettingsTemplateOptionsModel := iamIdentityService.NewCreateAccountSettingsTemplateOptions()
 				createAccountSettingsTemplateOptionsModel.SetAccountID("testString")
 				createAccountSettingsTemplateOptionsModel.SetName("testString")
 				createAccountSettingsTemplateOptionsModel.SetDescription("testString")
-				createAccountSettingsTemplateOptionsModel.SetAccountSettings(accountSettingsComponentModel)
+				createAccountSettingsTemplateOptionsModel.SetAccountSettings(templateAccountSettingsModel)
 				createAccountSettingsTemplateOptionsModel.SetHeaders(map[string]string{"foo": "bar"})
 				Expect(createAccountSettingsTemplateOptionsModel).ToNot(BeNil())
 				Expect(createAccountSettingsTemplateOptionsModel.AccountID).To(Equal(core.StringPtr("testString")))
 				Expect(createAccountSettingsTemplateOptionsModel.Name).To(Equal(core.StringPtr("testString")))
 				Expect(createAccountSettingsTemplateOptionsModel.Description).To(Equal(core.StringPtr("testString")))
-				Expect(createAccountSettingsTemplateOptionsModel.AccountSettings).To(Equal(accountSettingsComponentModel))
+				Expect(createAccountSettingsTemplateOptionsModel.AccountSettings).To(Equal(templateAccountSettingsModel))
 				Expect(createAccountSettingsTemplateOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
 			It(`Invoke NewCreateAccountSettingsTemplateVersionOptions successfully`, func() {
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				Expect(accountSettingsUserDomainRestrictionModel).ToNot(BeNil())
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+				Expect(accountSettingsUserDomainRestrictionModel.RealmID).To(Equal(core.StringPtr("IBMid")))
+				Expect(accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns).To(Equal([]string{"*.*@company.com"}))
+				Expect(accountSettingsUserDomainRestrictionModel.RestrictInvitation).To(Equal(core.BoolPtr(true)))
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				Expect(userMfaModel).ToNot(BeNil())
@@ -18802,29 +18963,35 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(userMfaModel.IamID).To(Equal(core.StringPtr("testString")))
 				Expect(userMfaModel.Mfa).To(Equal(core.StringPtr("NONE")))
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				Expect(accountSettingsComponentModel).ToNot(BeNil())
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
-				Expect(accountSettingsComponentModel.RestrictCreateServiceID).To(Equal(core.StringPtr("NOT_SET")))
-				Expect(accountSettingsComponentModel.RestrictCreatePlatformApikey).To(Equal(core.StringPtr("NOT_SET")))
-				Expect(accountSettingsComponentModel.AllowedIPAddresses).To(Equal(core.StringPtr("testString")))
-				Expect(accountSettingsComponentModel.Mfa).To(Equal(core.StringPtr("NONE")))
-				Expect(accountSettingsComponentModel.UserMfa).To(Equal([]iamidentityv1.UserMfa{*userMfaModel}))
-				Expect(accountSettingsComponentModel.SessionExpirationInSeconds).To(Equal(core.StringPtr("86400")))
-				Expect(accountSettingsComponentModel.SessionInvalidationInSeconds).To(Equal(core.StringPtr("7200")))
-				Expect(accountSettingsComponentModel.MaxSessionsPerIdentity).To(Equal(core.StringPtr("testString")))
-				Expect(accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds).To(Equal(core.StringPtr("3600")))
-				Expect(accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds).To(Equal(core.StringPtr("259200")))
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				Expect(templateAccountSettingsModel).ToNot(BeNil())
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
+				Expect(templateAccountSettingsModel.RestrictCreateServiceID).To(Equal(core.StringPtr("NOT_SET")))
+				Expect(templateAccountSettingsModel.RestrictCreatePlatformApikey).To(Equal(core.StringPtr("NOT_SET")))
+				Expect(templateAccountSettingsModel.RestrictUserListVisibility).To(Equal(core.StringPtr("NOT_RESTRICTED")))
+				Expect(templateAccountSettingsModel.RestrictUserDomains).To(Equal([]iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}))
+				Expect(templateAccountSettingsModel.AllowedIPAddresses).To(Equal(core.StringPtr("testString")))
+				Expect(templateAccountSettingsModel.Mfa).To(Equal(core.StringPtr("NONE")))
+				Expect(templateAccountSettingsModel.SessionExpirationInSeconds).To(Equal(core.StringPtr("86400")))
+				Expect(templateAccountSettingsModel.SessionInvalidationInSeconds).To(Equal(core.StringPtr("7200")))
+				Expect(templateAccountSettingsModel.MaxSessionsPerIdentity).To(Equal(core.StringPtr("testString")))
+				Expect(templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds).To(Equal(core.StringPtr("3600")))
+				Expect(templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds).To(Equal(core.StringPtr("259200")))
+				Expect(templateAccountSettingsModel.UserMfa).To(Equal([]iamidentityv1.UserMfa{*userMfaModel}))
+				Expect(templateAccountSettingsModel.RestrictUserDomainsAccountOverride).To(Equal(core.BoolPtr(true)))
 
 				// Construct an instance of the CreateAccountSettingsTemplateVersionOptions model
 				templateID := "testString"
@@ -18833,14 +19000,14 @@ var _ = Describe(`IamIdentityV1`, func() {
 				createAccountSettingsTemplateVersionOptionsModel.SetAccountID("testString")
 				createAccountSettingsTemplateVersionOptionsModel.SetName("testString")
 				createAccountSettingsTemplateVersionOptionsModel.SetDescription("testString")
-				createAccountSettingsTemplateVersionOptionsModel.SetAccountSettings(accountSettingsComponentModel)
+				createAccountSettingsTemplateVersionOptionsModel.SetAccountSettings(templateAccountSettingsModel)
 				createAccountSettingsTemplateVersionOptionsModel.SetHeaders(map[string]string{"foo": "bar"})
 				Expect(createAccountSettingsTemplateVersionOptionsModel).ToNot(BeNil())
 				Expect(createAccountSettingsTemplateVersionOptionsModel.TemplateID).To(Equal(core.StringPtr("testString")))
 				Expect(createAccountSettingsTemplateVersionOptionsModel.AccountID).To(Equal(core.StringPtr("testString")))
 				Expect(createAccountSettingsTemplateVersionOptionsModel.Name).To(Equal(core.StringPtr("testString")))
 				Expect(createAccountSettingsTemplateVersionOptionsModel.Description).To(Equal(core.StringPtr("testString")))
-				Expect(createAccountSettingsTemplateVersionOptionsModel.AccountSettings).To(Equal(accountSettingsComponentModel))
+				Expect(createAccountSettingsTemplateVersionOptionsModel.AccountSettings).To(Equal(templateAccountSettingsModel))
 				Expect(createAccountSettingsTemplateVersionOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
 			It(`Invoke NewCreateAPIKeyOptions successfully`, func() {
@@ -20251,6 +20418,16 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(updateAccountSettingsOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
 			It(`Invoke NewUpdateAccountSettingsTemplateVersionOptions successfully`, func() {
+				// Construct an instance of the AccountSettingsUserDomainRestriction model
+				accountSettingsUserDomainRestrictionModel := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+				Expect(accountSettingsUserDomainRestrictionModel).ToNot(BeNil())
+				accountSettingsUserDomainRestrictionModel.RealmID = core.StringPtr("IBMid")
+				accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns = []string{"*.*@company.com"}
+				accountSettingsUserDomainRestrictionModel.RestrictInvitation = core.BoolPtr(true)
+				Expect(accountSettingsUserDomainRestrictionModel.RealmID).To(Equal(core.StringPtr("IBMid")))
+				Expect(accountSettingsUserDomainRestrictionModel.InvitationEmailAllowPatterns).To(Equal([]string{"*.*@company.com"}))
+				Expect(accountSettingsUserDomainRestrictionModel.RestrictInvitation).To(Equal(core.BoolPtr(true)))
+
 				// Construct an instance of the UserMfa model
 				userMfaModel := new(iamidentityv1.UserMfa)
 				Expect(userMfaModel).ToNot(BeNil())
@@ -20259,29 +20436,35 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(userMfaModel.IamID).To(Equal(core.StringPtr("testString")))
 				Expect(userMfaModel.Mfa).To(Equal(core.StringPtr("NONE")))
 
-				// Construct an instance of the AccountSettingsComponent model
-				accountSettingsComponentModel := new(iamidentityv1.AccountSettingsComponent)
-				Expect(accountSettingsComponentModel).ToNot(BeNil())
-				accountSettingsComponentModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-				accountSettingsComponentModel.AllowedIPAddresses = core.StringPtr("testString")
-				accountSettingsComponentModel.Mfa = core.StringPtr("NONE")
-				accountSettingsComponentModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
-				accountSettingsComponentModel.SessionExpirationInSeconds = core.StringPtr("86400")
-				accountSettingsComponentModel.SessionInvalidationInSeconds = core.StringPtr("7200")
-				accountSettingsComponentModel.MaxSessionsPerIdentity = core.StringPtr("testString")
-				accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-				accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
-				Expect(accountSettingsComponentModel.RestrictCreateServiceID).To(Equal(core.StringPtr("NOT_SET")))
-				Expect(accountSettingsComponentModel.RestrictCreatePlatformApikey).To(Equal(core.StringPtr("NOT_SET")))
-				Expect(accountSettingsComponentModel.AllowedIPAddresses).To(Equal(core.StringPtr("testString")))
-				Expect(accountSettingsComponentModel.Mfa).To(Equal(core.StringPtr("NONE")))
-				Expect(accountSettingsComponentModel.UserMfa).To(Equal([]iamidentityv1.UserMfa{*userMfaModel}))
-				Expect(accountSettingsComponentModel.SessionExpirationInSeconds).To(Equal(core.StringPtr("86400")))
-				Expect(accountSettingsComponentModel.SessionInvalidationInSeconds).To(Equal(core.StringPtr("7200")))
-				Expect(accountSettingsComponentModel.MaxSessionsPerIdentity).To(Equal(core.StringPtr("testString")))
-				Expect(accountSettingsComponentModel.SystemAccessTokenExpirationInSeconds).To(Equal(core.StringPtr("3600")))
-				Expect(accountSettingsComponentModel.SystemRefreshTokenExpirationInSeconds).To(Equal(core.StringPtr("259200")))
+				// Construct an instance of the TemplateAccountSettings model
+				templateAccountSettingsModel := new(iamidentityv1.TemplateAccountSettings)
+				Expect(templateAccountSettingsModel).ToNot(BeNil())
+				templateAccountSettingsModel.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+				templateAccountSettingsModel.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+				templateAccountSettingsModel.RestrictUserDomains = []iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}
+				templateAccountSettingsModel.AllowedIPAddresses = core.StringPtr("testString")
+				templateAccountSettingsModel.Mfa = core.StringPtr("NONE")
+				templateAccountSettingsModel.SessionExpirationInSeconds = core.StringPtr("86400")
+				templateAccountSettingsModel.SessionInvalidationInSeconds = core.StringPtr("7200")
+				templateAccountSettingsModel.MaxSessionsPerIdentity = core.StringPtr("testString")
+				templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+				templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+				templateAccountSettingsModel.UserMfa = []iamidentityv1.UserMfa{*userMfaModel}
+				templateAccountSettingsModel.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
+				Expect(templateAccountSettingsModel.RestrictCreateServiceID).To(Equal(core.StringPtr("NOT_SET")))
+				Expect(templateAccountSettingsModel.RestrictCreatePlatformApikey).To(Equal(core.StringPtr("NOT_SET")))
+				Expect(templateAccountSettingsModel.RestrictUserListVisibility).To(Equal(core.StringPtr("NOT_RESTRICTED")))
+				Expect(templateAccountSettingsModel.RestrictUserDomains).To(Equal([]iamidentityv1.AccountSettingsUserDomainRestriction{*accountSettingsUserDomainRestrictionModel}))
+				Expect(templateAccountSettingsModel.AllowedIPAddresses).To(Equal(core.StringPtr("testString")))
+				Expect(templateAccountSettingsModel.Mfa).To(Equal(core.StringPtr("NONE")))
+				Expect(templateAccountSettingsModel.SessionExpirationInSeconds).To(Equal(core.StringPtr("86400")))
+				Expect(templateAccountSettingsModel.SessionInvalidationInSeconds).To(Equal(core.StringPtr("7200")))
+				Expect(templateAccountSettingsModel.MaxSessionsPerIdentity).To(Equal(core.StringPtr("testString")))
+				Expect(templateAccountSettingsModel.SystemAccessTokenExpirationInSeconds).To(Equal(core.StringPtr("3600")))
+				Expect(templateAccountSettingsModel.SystemRefreshTokenExpirationInSeconds).To(Equal(core.StringPtr("259200")))
+				Expect(templateAccountSettingsModel.UserMfa).To(Equal([]iamidentityv1.UserMfa{*userMfaModel}))
+				Expect(templateAccountSettingsModel.RestrictUserDomainsAccountOverride).To(Equal(core.BoolPtr(true)))
 
 				// Construct an instance of the UpdateAccountSettingsTemplateVersionOptions model
 				ifMatch := "testString"
@@ -20294,7 +20477,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				updateAccountSettingsTemplateVersionOptionsModel.SetAccountID("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.SetName("testString")
 				updateAccountSettingsTemplateVersionOptionsModel.SetDescription("testString")
-				updateAccountSettingsTemplateVersionOptionsModel.SetAccountSettings(accountSettingsComponentModel)
+				updateAccountSettingsTemplateVersionOptionsModel.SetAccountSettings(templateAccountSettingsModel)
 				updateAccountSettingsTemplateVersionOptionsModel.SetHeaders(map[string]string{"foo": "bar"})
 				Expect(updateAccountSettingsTemplateVersionOptionsModel).ToNot(BeNil())
 				Expect(updateAccountSettingsTemplateVersionOptionsModel.IfMatch).To(Equal(core.StringPtr("testString")))
@@ -20303,7 +20486,7 @@ var _ = Describe(`IamIdentityV1`, func() {
 				Expect(updateAccountSettingsTemplateVersionOptionsModel.AccountID).To(Equal(core.StringPtr("testString")))
 				Expect(updateAccountSettingsTemplateVersionOptionsModel.Name).To(Equal(core.StringPtr("testString")))
 				Expect(updateAccountSettingsTemplateVersionOptionsModel.Description).To(Equal(core.StringPtr("testString")))
-				Expect(updateAccountSettingsTemplateVersionOptionsModel.AccountSettings).To(Equal(accountSettingsComponentModel))
+				Expect(updateAccountSettingsTemplateVersionOptionsModel.AccountSettings).To(Equal(templateAccountSettingsModel))
 				Expect(updateAccountSettingsTemplateVersionOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
 			It(`Invoke NewUpdateAPIKeyOptions successfully`, func() {
@@ -20616,33 +20799,6 @@ var _ = Describe(`IamIdentityV1`, func() {
 		})
 	})
 	Describe(`Model unmarshaling tests`, func() {
-		It(`Invoke UnmarshalAccountSettingsComponent successfully`, func() {
-			// Construct an instance of the model.
-			model := new(iamidentityv1.AccountSettingsComponent)
-			model.RestrictCreateServiceID = core.StringPtr("NOT_SET")
-			model.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
-			model.AllowedIPAddresses = core.StringPtr("testString")
-			model.Mfa = core.StringPtr("NONE")
-			model.UserMfa = nil
-			model.SessionExpirationInSeconds = core.StringPtr("86400")
-			model.SessionInvalidationInSeconds = core.StringPtr("7200")
-			model.MaxSessionsPerIdentity = core.StringPtr("testString")
-			model.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
-			model.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
-
-			b, err := json.Marshal(model)
-			Expect(err).To(BeNil())
-
-			var raw map[string]json.RawMessage
-			err = json.Unmarshal(b, &raw)
-			Expect(err).To(BeNil())
-
-			var result *iamidentityv1.AccountSettingsComponent
-			err = iamidentityv1.UnmarshalAccountSettingsComponent(raw, &result)
-			Expect(err).To(BeNil())
-			Expect(result).ToNot(BeNil())
-			Expect(result).To(Equal(model))
-		})
 		It(`Invoke UnmarshalAccountSettingsUserDomainRestriction successfully`, func() {
 			// Construct an instance of the model.
 			model := new(iamidentityv1.AccountSettingsUserDomainRestriction)
@@ -20867,6 +21023,36 @@ var _ = Describe(`IamIdentityV1`, func() {
 
 			var result *iamidentityv1.ResponseContext
 			err = iamidentityv1.UnmarshalResponseContext(raw, &result)
+			Expect(err).To(BeNil())
+			Expect(result).ToNot(BeNil())
+			Expect(result).To(Equal(model))
+		})
+		It(`Invoke UnmarshalTemplateAccountSettings successfully`, func() {
+			// Construct an instance of the model.
+			model := new(iamidentityv1.TemplateAccountSettings)
+			model.RestrictCreateServiceID = core.StringPtr("NOT_SET")
+			model.RestrictCreatePlatformApikey = core.StringPtr("NOT_SET")
+			model.RestrictUserListVisibility = core.StringPtr("NOT_RESTRICTED")
+			model.RestrictUserDomains = nil
+			model.AllowedIPAddresses = core.StringPtr("testString")
+			model.Mfa = core.StringPtr("NONE")
+			model.SessionExpirationInSeconds = core.StringPtr("86400")
+			model.SessionInvalidationInSeconds = core.StringPtr("7200")
+			model.MaxSessionsPerIdentity = core.StringPtr("testString")
+			model.SystemAccessTokenExpirationInSeconds = core.StringPtr("3600")
+			model.SystemRefreshTokenExpirationInSeconds = core.StringPtr("259200")
+			model.UserMfa = nil
+			model.RestrictUserDomainsAccountOverride = core.BoolPtr(true)
+
+			b, err := json.Marshal(model)
+			Expect(err).To(BeNil())
+
+			var raw map[string]json.RawMessage
+			err = json.Unmarshal(b, &raw)
+			Expect(err).To(BeNil())
+
+			var result *iamidentityv1.TemplateAccountSettings
+			err = iamidentityv1.UnmarshalTemplateAccountSettings(raw, &result)
 			Expect(err).To(BeNil())
 			Expect(result).ToNot(BeNil())
 			Expect(result).To(Equal(model))

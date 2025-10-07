@@ -120,12 +120,16 @@ var _ = Describe(`IamIdentityV1 Integration Tests`, func() {
 
 	Describe(`External configuration`, func() {
 		It("Successfully load the configuration", func() {
-			_, err = os.Stat(externalConfigFile)
-			if err != nil {
-				Skip("External configuration file not found, skipping tests: " + err.Error())
+
+			if os.Getenv("IBM_CREDENTIALS_FILE") == "" {
+				_, err = os.Stat(externalConfigFile)
+				if err != nil {
+					Skip("External configuration file not found, skipping tests: " + err.Error())
+				}
+
+				os.Setenv("IBM_CREDENTIALS_FILE", externalConfigFile)
 			}
 
-			os.Setenv("IBM_CREDENTIALS_FILE", externalConfigFile)
 			config, err = core.GetServiceProperties(iamidentityv1.DefaultServiceName)
 			if err != nil {
 				Skip("Error loading service properties, skipping tests: " + err.Error())
@@ -2250,21 +2254,39 @@ var _ = Describe(`IamIdentityV1 Integration Tests`, func() {
 		})
 		It(`CreateAccountSettingsTemplateIT`, func() {
 
-			settings := &iamidentityv1.AccountSettingsComponent{
+			userDomainRestriction := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+			userDomainRestriction.RealmID = core.StringPtr("IBMid")
+			userDomainRestriction.RestrictInvitation = core.BoolPtr(false)
+			userDomainRestriction.InvitationEmailAllowPatterns = []string{"**@**ibm.com"}
+
+			settingsRequest := &iamidentityv1.TemplateAccountSettings{
 				Mfa:                                  core.StringPtr("LEVEL1"),
 				SystemAccessTokenExpirationInSeconds: core.StringPtr("3000"),
+				RestrictUserListVisibility:           core.StringPtr("NOT_RESTRICTED"),
+				RestrictUserDomains:                  []iamidentityv1.AccountSettingsUserDomainRestriction{*userDomainRestriction},
+				RestrictUserDomainsAccountOverride:   core.BoolPtr(true),
 			}
+
 			createOptions := &iamidentityv1.CreateAccountSettingsTemplateOptions{
 				Name:            &accountSettingsTemplateName,
 				Description:     core.StringPtr("GoSDK test Account Settings Template"),
 				AccountID:       &enterpriseAccountID,
-				AccountSettings: settings,
+				AccountSettings: settingsRequest,
 			}
 
 			createResponse, response, err := iamIdentityService.CreateAccountSettingsTemplate(createOptions)
 			Expect(response.StatusCode).To(Equal(201))
 			Expect(err).To(BeNil())
 			Expect(createResponse).ToNot(BeNil())
+
+			settingsResponse := createResponse.AccountSettings
+
+			Expect(settingsResponse).ToNot(BeNil())
+			Expect(settingsResponse.Mfa).To(Equal(settingsRequest.Mfa))
+			Expect(settingsResponse.SystemAccessTokenExpirationInSeconds).To(Equal(settingsRequest.SystemAccessTokenExpirationInSeconds))
+			Expect(settingsResponse.RestrictUserListVisibility).To(Equal(settingsRequest.RestrictUserListVisibility))
+			Expect(settingsResponse.RestrictUserDomains).To(Equal(settingsRequest.RestrictUserDomains))
+			Expect(settingsResponse.RestrictUserDomainsAccountOverride).To(Equal(settingsRequest.RestrictUserDomainsAccountOverride))
 
 			// Grab the ID and Etag value from the response for use in the update operation.
 			accountSettingsTemplateId = *createResponse.ID
@@ -2316,10 +2338,19 @@ var _ = Describe(`IamIdentityV1 Integration Tests`, func() {
 			shouldSkipTest()
 		})
 		It(`UpdateAccountSettingsTemplateIT`, func() {
-			settings := &iamidentityv1.AccountSettingsComponent{
-				Mfa:                                  core.StringPtr("LEVEL1"),
-				SystemAccessTokenExpirationInSeconds: core.StringPtr("3000"),
+			userDomainRestriction := new(iamidentityv1.AccountSettingsUserDomainRestriction)
+			userDomainRestriction.RealmID = core.StringPtr("IBMid")
+			userDomainRestriction.RestrictInvitation = core.BoolPtr(false)
+			userDomainRestriction.InvitationEmailAllowPatterns = []string{"**@**company.com"}
+
+			settingsRequest := &iamidentityv1.TemplateAccountSettings{
+				Mfa:                                  core.StringPtr("LEVEL3"),
+				SystemAccessTokenExpirationInSeconds: core.StringPtr("900"),
+				RestrictUserListVisibility:           core.StringPtr("NOT_RESTRICTED"),
+				RestrictUserDomains:                  []iamidentityv1.AccountSettingsUserDomainRestriction{*userDomainRestriction},
+				RestrictUserDomainsAccountOverride:   core.BoolPtr(false),
 			}
+
 			updateOptions := &iamidentityv1.UpdateAccountSettingsTemplateVersionOptions{
 				AccountID:       &enterpriseAccountID,
 				TemplateID:      &accountSettingsTemplateId,
@@ -2327,9 +2358,19 @@ var _ = Describe(`IamIdentityV1 Integration Tests`, func() {
 				IfMatch:         &accountSettingsTemplateEtag,
 				Name:            &accountSettingsTemplateName,
 				Description:     core.StringPtr("GoSDK test Account Settings Template - updated"),
-				AccountSettings: settings,
+				AccountSettings: settingsRequest,
 			}
 			updateResponse, response, err := iamIdentityService.UpdateAccountSettingsTemplateVersion(updateOptions)
+
+			settingsResponse := updateResponse.AccountSettings
+
+			Expect(settingsResponse).ToNot(BeNil())
+			Expect(settingsResponse.Mfa).To(Equal(settingsRequest.Mfa))
+			Expect(settingsResponse.SystemAccessTokenExpirationInSeconds).To(Equal(settingsRequest.SystemAccessTokenExpirationInSeconds))
+			Expect(settingsResponse.RestrictUserListVisibility).To(Equal(settingsRequest.RestrictUserListVisibility))
+			Expect(settingsResponse.RestrictUserDomains).To(Equal(settingsRequest.RestrictUserDomains))
+			Expect(settingsResponse.RestrictUserDomainsAccountOverride).To(Equal(settingsRequest.RestrictUserDomainsAccountOverride))
+
 			Expect(response.StatusCode).To(Equal(200))
 			Expect(err).To(BeNil())
 			Expect(updateResponse).ToNot(BeNil())
@@ -2396,7 +2437,7 @@ var _ = Describe(`IamIdentityV1 Integration Tests`, func() {
 			shouldSkipTest()
 		})
 		It(`CreateNewAccountSettingsTemplateVersionIT`, func() {
-			settings := &iamidentityv1.AccountSettingsComponent{
+			settings := &iamidentityv1.TemplateAccountSettings{
 				Mfa:                                  core.StringPtr("LEVEL1"),
 				SystemAccessTokenExpirationInSeconds: core.StringPtr("2600"),
 				RestrictCreatePlatformApikey:         core.StringPtr("RESTRICTED"),
@@ -2523,8 +2564,6 @@ var _ = Describe(`IamIdentityV1 Integration Tests`, func() {
 			shouldSkipTest()
 		})
 		It(`DeleteAccountSettingsTemplateIT`, func() {
-			waitUntilAccountSettingsAssignmentFinishedIT(iamIdentityService, &accountSettingsTemplateAssignmentId, &accountSettingsTemplateAssignmentEtag)
-
 			deleteOptions := &iamidentityv1.DeleteAllVersionsOfAccountSettingsTemplateOptions{
 				TemplateID: &accountSettingsTemplateId,
 			}
